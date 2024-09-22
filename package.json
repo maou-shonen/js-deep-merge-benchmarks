@@ -1,0 +1,28 @@
+{
+  "name": "js-deep-merge-benchmarks",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Benchmarks for some JavaScript deep-merge packages",
+  "type": "module",
+  "scripts": {
+    "compare": "tsx ./src/index.js",
+    "generate:report": "tsx ./scripts/generate_report.ts",
+    "generate:readme": "tsx ./scripts/generate_readme.ts"
+  },
+  "packageManager": "pnpm@9.11.0",
+  "dependencies": {
+    "@fastify/deepmerge": "latest",
+    "deepmerge": "latest",
+    "deepmerge-ts": "latest",
+    "defu": "latest",
+    "lodash-es": "latest",
+    "merge-deep": "latest",
+    "ts-deepmerge": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "tinybench": "^2.9.0",
+    "tsx": "^4.19.1",
+    "zx": "^8.1.8"
+  }
+}
